@@ -1,4 +1,8 @@
-# 🚀 Gerenciador de Publicação de Projetos
+![Code Connect](/img/Logo.svg)
+
+---
+
+# Code Connect | Gerenciador de Publicação de Projetos
 Uma aplicação Front-end desenvolvida em JavaScript Vanilla focada na experiência de upload e cadastro de projetos de programação. O sistema gerencia formulários, validações assíncronas, manipulação de imagens e um sistema de tags interativo.
 
 ---
