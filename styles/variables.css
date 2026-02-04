@@ -1,0 +1,40 @@
+:root {
+  /* -colors- */
+  /* --backgrounds-- */
+  --surface-primary: #01080e;
+  --surface-secondary: #171d1f;
+  --surface-inverse: #888888;
+
+  /* --textos-- */
+  --content-primary: #171d1f;
+  --content-secondary: #888888;
+  --content-inverse: #e1e1e1;
+
+  /* --destaques-- */
+  --accent-primary: #81fe88;
+  --accent-secondary: #bcbcbc;
+  --accent-inverse: #132e35;
+
+  /* --border-- */
+  --border-primary: #81fe88;
+  --border-secondary: #888888;
+
+  /* -font- */
+  /* --font-family-- */
+  --prompt: "Prompt", sans-serif;
+
+  /* --font-size-- */
+  --xxs: 0.75rem;
+  --xs: 1rem;
+  --s: 1.125rem;
+  --m: 1.375rem;
+  --l: 1.625rem;
+  --xl: 2rem;
+  --xxl: 3rem;
+
+  /* --font-weight-- */
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+}

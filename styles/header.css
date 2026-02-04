@@ -1,0 +1,36 @@
+@import url("variables.css");
+@import url("base.css");
+
+.cabecalho {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.cabecalho__pesquisa {
+  padding: 0.5rem 0;
+  width: 100%;
+  background-color: var(--surface-secondary);
+  color: var(--accent-secondary);
+  border: none;
+  border-radius: 4px;
+  font-family: var(--prompt);
+  font-size: var(--s);
+  text-align: center;
+
+  &:focus {
+    outline: 1px solid var(--accent-secondary);
+  }
+
+  &::placeholder {
+    background-image: url("/img/search.png");
+    background-repeat: no-repeat;
+    background-position: left 3% center;
+  }
+}

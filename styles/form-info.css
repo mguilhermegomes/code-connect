@@ -1,0 +1,99 @@
+@import url("variables.css");
+@import url("base.css");
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .form-info__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .form-info__campo > label {
+    color: var(--content-inverse);
+  }
+
+  .form-info__campo > input,
+  .form-info__campo > textarea {
+    padding: 0.5rem 1rem;
+    background-color: var(--surface-inverse);
+    color: var(--content-primary);
+    border-radius: 4px;
+    font-family: var(--prompt);
+    font-size: var(--xs);
+
+    &:focus {
+      outline: 1px solid var(--accent-secondary);
+    }
+  }
+
+  .form-info__campo--botoes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .campo--botoes__btn {
+    padding: 0.75rem 1rem 0.75rem 0;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: var(--semibold);
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      top: 58%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-position-x: 8px;
+    }
+  }
+
+  .campo--botoes__btn-descartar {
+    color: var(--accent-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+
+    &::after {
+      background-image: url("/img/trash.svg");
+    }
+  }
+
+  .campo--botoes__btn-publicar {
+    background-color: var(--accent-primary);
+
+    &::after {
+      background-image: url("/img/arrow_forward2.svg");
+    }
+  }
+}
+
+.tags > .tags__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    > .tags__item {
+        padding: 0.25rem 0;
+        max-width: 128px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--content-secondary);
+        color: var(--content-primary);
+        border-radius: 4px;
+
+        > img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+}

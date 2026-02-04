@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>CodeConnect</title>
+  </head>
+
+  <body>
+    <main>
+      <header class="cabecalho">
+        <div class="container">
+          <nav>
+            <ul class="nav__lista nav__lista--header">
+              <li class="nav__item">
+                <a class="cabecalho__logo nav__link" href="index.html">
+                  <img src="img/Logo.svg" alt="logo CodeConnect" />
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--destaque">Publicar</a>
+              </li>
+            </ul>
+          </nav>
+          <label for="cabecalho-barra-de-pesquisa">
+            <input
+              type="search"
+              name="pesquisa"
+              class="cabecalho__pesquisa"
+              id="cabecalho-barra-de-pesquisa"
+              placeholder="Digite o que você procura"
+            />
+          </label>
+        </div>
+      </header>
+      <section class="publicar">
+        <div class="container">
+          <aside class="sidebar" id="menu-lateral">
+            <img src="img/Logo.svg" alt="logo CodeConnect" />
+            <nav>
+              <ul class="nav__lista nav__lista--sidebar">
+                <li class="nav__item">
+                  <a href="#" class="nav__link nav__link--destaque">Publicar</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    <img src="img/feed.svg" alt="Feed" />
+                    <p>Feed</p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    <img src="img/account_circle.svg" alt="Perfil" />
+                    <p>Perfil</p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    <img src="img/info.svg" alt="Info" />
+                    <p>Sobre nós</p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    <img src="img/logout.svg" alt="Logout" />
+                    <p>Sair</p>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          <div class="projeto">
+            <article class="projeto-imagem">
+              <div class="projeto-imagem__container">
+                <p>Insira a imagem do seu projeto</p>
+                <img src="" alt="projeto inserido pelo usuario" style="display: none;">
+              </div>
+              <button class="projeto-imagem__botao" id="btn-carregar-imagem" aria-label="carregar imagem">
+                Carregar imagem
+              </button>
+              <input type="file" name="arquivo" accept="image/png, image/jpeg" id="input-carregar-imagem" hidden>
+              <div class="projeto-imagem__texto">
+                <p></p>
+                <img src="/img/close.svg" alt="ícone de remover" aria-label="remover" id="icon-remover-imagem">
+              </div>
+            <span id="imagem-inexistente" style="display: none;"></span>
+            </article>
+            <article class="projeto-info">
+              <h1 class="projeto-info__titulo">Novo projeto</h1>
+              <form id="form-info" class="form-info">
+                <div class="form-info__campo">
+                  <label for="form-info-campo-nome">Nome do projeto</label>
+                  <input
+                    type="text"
+                    name="nome"
+                    id="form-info-campo-nome"
+                    class="campo-nome"
+                    placeholder="Digite o nome do projeto"
+                    required
+                  />
+                  <span id="disponibilidade-do-nome" style="display: none;"></span>
+                </div>
+                <div class="form-info__campo">
+                  <label for="form-info-campo-descricao">Descrição</label>
+                  <textarea
+                    name="descricao"
+                    id="form-info-campo-descricao"
+                    class="campo-descricao"
+                    placeholder="Conte mais sobre o projeto"
+                    rows="5"
+                    cols="33"
+                    required
+                  ></textarea>
+                <span id="descricao-vazia" style="display: none;"></span>
+                </div>
+                <div class="form-info__campo">
+                  <label for="form-info-campo-tags">Tags</label>
+                  <input
+                    type="text"
+                    name="tags"
+                    id="form-info-campo-tags"
+                    class="campo-tags"
+                    placeholder="Coloque tags em seu projeto"
+                    required
+                  />
+                <span id="tag-erro" style="display: none;"></span>
+                </div>
+                <div class="tags">
+                    <ul class="tags__lista" id="form-info-tags-lista">
+                    </ul>
+                </div>
+                <div class="form-info__campo--botoes">
+                  <button
+                    class="campo--botoes__btn campo--botoes__btn-descartar"
+                    id="btn-descartar"
+                  >
+                    Descartar
+                  </button>
+                  <button
+                    class="campo--botoes__btn campo--botoes__btn-publicar"
+                    id="btn-publicar"
+                  >
+                    Publicar
+                  </button>
+                </div>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="menu">
+        <nav>
+          <ul class="nav__lista nav__lista--menu">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img src="img/feed.svg" alt="Feed" />
+                <p>Feed</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img src="img/account_circle.svg" alt="Perfil" />
+                <p>Perfil</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img src="img/info.svg" alt="Info" />
+                <p>Sobre nós</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img src="img/logout.svg" alt="Logout" />
+                <p>Sair</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <script type="module" src="scripts/script.js"></script>
+  </body>
+</html>

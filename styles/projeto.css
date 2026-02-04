@@ -1,0 +1,106 @@
+@import url("variables.css");
+@import url("base.css");
+
+.projeto {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  border-radius: 8px;
+  @media screen and (min-width: 1200px) {
+    padding: 2rem;
+    flex-direction: row;
+    background-color: var(--surface-secondary);
+  }
+
+  .projeto-imagem {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .projeto-imagem__container {
+    padding: 1.5rem 1rem;
+    width: 648px;
+    height: 368px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--surface-inverse);
+    border-radius: 8px;
+    @media screen and (min-width: 1200px) {
+      width: 488px;
+    }
+  }
+
+  .projeto-imagem__container > p {
+    color: var(--accent-secondary);
+    font-size: var(--xxl);
+    line-height: 120%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .projeto-imagem__container > img {
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 16px 24px rgb(0, 0, 0, 0.2);
+    object-fit: cover;
+  }
+
+  .projeto-imagem__botao {
+    position: relative;
+    padding: 1rem 1.8rem 1rem 0;
+    width: 100%;
+    color: var(--content-secondary);
+    border: 1px solid var(--border-secondary);
+    border-radius: 8px;
+    font-weight: var(--semibold);
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 58%;
+      display: inline-block;
+      transform: translateY(-50%);
+      background-image: url("/img/upload.svg");
+      background-repeat: no-repeat;
+      background-position-x: 8px;
+    }
+  }
+
+  .projeto-imagem__texto {
+    display: none;
+    align-items: center;
+    gap: 8px;
+
+    > p {
+      color: var(--content-secondary);
+      font-size: var(--xs);
+    }
+
+    > img {
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+    }
+  }
+
+  .projeto-info {
+    .projeto-info__titulo {
+      margin-bottom: 2.5rem;
+      color: var(--content-inverse);
+      font-size: var(--l);
+      font-weight: var(--semibold);
+    }
+  }
+}
+
+.menu {
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
