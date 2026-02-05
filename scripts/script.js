@@ -37,7 +37,7 @@ inputNomeDoProjeto.addEventListener("input", () => {
 });
 
 textareaDescricao.addEventListener("blur", () => {
-  verificarSeDescricaoExiste(textareaDescricao, textareaDescricao);
+  verificarSeDescricaoExiste(textareaDescricao, textoDescricaoVazia);
 });
 
 textareaDescricao.addEventListener("input", () => {
