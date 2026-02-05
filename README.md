@@ -108,7 +108,6 @@ Você pode visualizar e testar o projeto facilmente pelo link:
 ---
 
 ## 🚀 Como Executar
-Como este projeto utiliza ES Modules (import/export), ele precisa ser servido através de um servidor HTTP local para evitar erros de política de mesma origem (CORS).
 
 ### 1. Clone o repositório:
 ```bash
