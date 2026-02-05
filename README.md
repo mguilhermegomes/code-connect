@@ -111,7 +111,7 @@ Você pode visualizar e testar o projeto facilmente pelo link:
 
 ### 1. Clone o repositório:
 ```bash
-git clone https://seu-repositorio.com/projeto.git
+git clone https://github.com/mguilhermegomes/code-connect.git
 ```
 
 ### 2. Abra a pasta do projeto.
