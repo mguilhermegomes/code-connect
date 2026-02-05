@@ -103,7 +103,7 @@ O código foi refatorado para seguir o princípio de responsabilidade única, se
 Você pode visualizar e testar o projeto facilmente pelo link:
 
 - **👉 Deploy no GitHub Pages:**
-[Acesse o projeto](https://mguilhermegomes-serenatto-cafe.vercel.app)
+[Acesse o projeto](https://mguilhermegomes.github.io/code-connect/)
 
 ---
 
